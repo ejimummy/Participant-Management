@@ -8,8 +8,9 @@ namespace ParticipantManagement
 {
     class Location
     {
+        static int lastLocationId = 0;
         #region Properties
-
+        
         public int LocationId { get; private set; }
         /// <summary>
         /// Street address of vendor partner
@@ -29,6 +30,10 @@ namespace ParticipantManagement
         public int ZipCode { get; set; }
         #endregion
 
+        public Location()
+        {
+            LocationId = ++lastLocationId;
+        }
         #region Methods
         /// <summary>
         /// Add a new vendor location

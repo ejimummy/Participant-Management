@@ -35,16 +35,16 @@ namespace ParticipantManagement
 
         #endregion
 
-        public Session()
+        public Session(int workshopId, string date, string time, int locationId)
         {
             SessionId = ++lastSessionId;
+            WorkshopId = workshopId;
+            Date = date;
+            Time = time;
+            LocationId = locationId;
         }
 
         #region Methods
-        public void scheduleSession()
-        {
-
-        }
 
         public void cancelSession()
         {
