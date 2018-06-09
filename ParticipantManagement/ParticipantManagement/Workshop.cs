@@ -51,7 +51,7 @@ namespace ParticipantManagement
         /// Delete workshop from the system
         /// </summary>
         /// <param name="">WorkshopId</param>
-        public void DeleteWorkshop(WorkshopId)
+        public void DeleteWorkshop(int WorkshopId)
         {
 
         }

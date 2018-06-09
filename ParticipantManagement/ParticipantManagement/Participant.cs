@@ -10,7 +10,7 @@ namespace ParticipantManagement
     {
         #region Properties
 
-        public List <string> CollegeDegree { get; set; } 
+        public string HighestEducation { get; set; }
         /// <summary>
         /// Institution or how they learned to code
         /// </summary>
@@ -18,7 +18,7 @@ namespace ParticipantManagement
         /// <summary>
         /// Participant's technical skills, listed by SkillId linked to Skill class
         /// </summary>
-        public List <string> Skills { get; set; }
+        public List <string> SkillId { get; set; }
         #endregion
 
         #region Methods

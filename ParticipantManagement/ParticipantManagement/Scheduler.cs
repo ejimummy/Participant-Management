@@ -8,5 +8,27 @@ namespace ParticipantManagement
 {
     class Scheduler
     {
+        public int UserId { get; set; }
+        public int SessionId { get; set;}
+
+        public void ScheduleSession()
+        {
+
+        }
+
+        public void UpdateSchedule()
+        {
+
+        }
+
+        public void DeleteScheduledSession()
+        {
+
+        }
+
+        public void PrintSchedule()
+        {
+
+        }
     }
 }

@@ -9,10 +9,12 @@ namespace ParticipantManagement
     class Session
     {
         #region Properties
+        static int lastSessionId = 0;
+
         /// <summary>
-        /// LocationId associated with Location class
+        /// Auto Generated SessionId
         /// </summary>
-        public int LocationId { get; set; }
+        public int SessionId { get; private set; }
         /// <summary>
         /// Scheduled date of workshop
         /// </summary>
@@ -26,7 +28,17 @@ namespace ParticipantManagement
         /// </summary>
         public int WorkshopId { get; set; }
 
+        /// <summary>
+        /// LocationId associated with Location class
+        /// </summary>
+        public int LocationId { get; set; }
+
         #endregion
+
+        public Session()
+        {
+            SessionId = ++lastSessionId;
+        }
 
         #region Methods
         public void scheduleSession()
