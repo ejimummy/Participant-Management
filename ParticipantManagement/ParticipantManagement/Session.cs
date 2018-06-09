@@ -10,6 +10,10 @@ namespace ParticipantManagement
     {
         #region Properties
         /// <summary>
+        /// LocationId associated with Location class
+        /// </summary>
+        public int LocationId { get; set; }
+        /// <summary>
         /// Scheduled date of workshop
         /// </summary>
         public string Date { get; set; }
@@ -18,22 +22,6 @@ namespace ParticipantManagement
         /// </summary>
         public string Time { get; set; }
         /// <summary>
-        /// Scheduled Street Address of session location
-        /// </summary>
-        public string StreetAddress { get; set; }
-        /// <summary>
-        /// City of session location
-        /// </summary>
-        public string City { get; set; }
-        /// <summary>
-        /// State of session location
-        /// </summary>
-        public string State { get; set; }
-        /// <summary>
-        /// Zip Code of session location
-        /// </summary>
-        public int ZipCode { get; set; }
-        /// <summary>
         /// WorkshopId associated from Workshops
         /// </summary>
         public int WorkshopId { get; set; }
@@ -41,6 +29,20 @@ namespace ParticipantManagement
         #endregion
 
         #region Methods
+        public void scheduleSession()
+        {
+
+        }
+
+        public void cancelSession()
+        {
+
+        }
+
+        public void updateSession()
+        {
+
+        }
         #endregion
     }
 }
