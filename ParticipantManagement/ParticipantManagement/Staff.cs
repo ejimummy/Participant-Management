@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace ParticipantManagement
 {
+    enum StaffType
+    {
+        Instructor, //paid lead 
+        TeachingFellow, //paid assistant
+        Volunteer, //unpaid volunteer
+        Mentor //unpaid teacher or assistant
+    }
     class Staff : User
     {
         /// <summary>
@@ -19,6 +26,6 @@ namespace ParticipantManagement
         /// <summary>
         /// Staff member's position designation such as Volunteer, Instructor, TA
         /// </summary>
-        public string StaffType { get; set; }
+        public StaffType StaffType { get; set; }
     }
 }

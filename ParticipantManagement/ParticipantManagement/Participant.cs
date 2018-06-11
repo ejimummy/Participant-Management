@@ -6,15 +6,31 @@ using System.Threading.Tasks;
 
 namespace ParticipantManagement
 {
+    enum Education
+    {
+        HighSchool,
+        Bachelors,
+        Masters,
+        PHD
+    }
+
+    enum CodeEducation
+    {
+        SelfTaught,
+        College,
+        Bootcamp,
+        OnTheJob,
+        Other
+    }
     class Participant : User
     {
         #region Properties
 
-        public string HighestEducation { get; set; }
+        public Education HighestEducation { get; set; }
         /// <summary>
         /// Institution or how they learned to code
         /// </summary>
-        public string LearnedToCode { get; set; }
+        public CodeEducation LearnedToCode { get; set; }
         /// <summary>
         /// Participant's technical skills, listed by SkillId linked to Skill class
         /// </summary>
@@ -30,11 +46,11 @@ namespace ParticipantManagement
 
         }
         /// <summary>
-        /// Participant can update their personal data
+        /// Participant can add a new technical skill
         /// </summary>
-        public void UpdatePersonalData() ///probably want to do this a bit differently for each property
+        public void AddSkill()
         {
-
+  
         }
         #endregion
     }
