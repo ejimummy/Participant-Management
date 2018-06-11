@@ -26,34 +26,42 @@ namespace ParticipantManagement
         /// <summary>
         /// WorkshopId associated from Workshops
         /// </summary>
-        public int WorkshopId { get; set; }
+        public Workshop Workshop { get; set; }
 
         /// <summary>
         /// LocationId associated with Location class
         /// </summary>
-        public int LocationId { get; set; }
+        public Location Location { get; set; }
 
         #endregion
 
-        public Session(int workshopId, string date, string time, int locationId)
+        public Session(Workshop workshop, string date, string time, Location location)
         {
             SessionId = ++lastSessionId;
-            WorkshopId = workshopId;
+            Workshop = workshop;
             Date = date;
             Time = time;
-            LocationId = locationId;
+            Location = location;
         }
 
         #region Methods
-
+       
+        /// <summary>
+        /// Remove a session from the database
+        /// </summary>
         public void cancelSession()
         {
 
         }
-
-        public void updateSession()
+        /// <summary>
+        /// Update a session that already exists in the database
+        /// </summary>
+        public void updateSession(Workshop workshop, string date, string time, Location location)
         {
-
+            Workshop = workshop;
+            Date = date;
+            Time = time;
+            Location = location;
         }
         #endregion
     }

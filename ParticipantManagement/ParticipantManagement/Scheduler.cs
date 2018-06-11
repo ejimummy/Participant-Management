@@ -6,27 +6,27 @@ using System.Threading.Tasks;
 
 namespace ParticipantManagement
 {
-    class Scheduler
+    /// <summary>
+    /// Factory class
+    /// </summary>
+    static class Scheduler
     {
-        public int UserId { get; set; }
-        public int SessionId { get; set;}
-
-        public void ScheduleSession()
+        static public void ScheduleSession(User user, Session session) 
         {
 
         }
 
-        public void UpdateSchedule()
+        static public void UpdateScheduledSession(User user, Session session)
         {
 
         }
 
-        public void DeleteScheduledSession()
+        static public void DeleteScheduledSession(User user, Session session)
         {
 
         }
 
-        public void PrintSchedule()
+        static public void PrintSchedule(User user, Session session)
         {
 
         }

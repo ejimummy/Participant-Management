@@ -18,7 +18,7 @@ namespace ParticipantManagement
         /// <summary>
         /// Participant's technical skills, listed by SkillId linked to Skill class
         /// </summary>
-        public List <string> SkillId { get; set; }
+        public List <Skill> SkillId { get; set; }
         #endregion
 
         #region Methods
