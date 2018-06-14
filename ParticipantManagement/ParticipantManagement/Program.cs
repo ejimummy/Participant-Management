@@ -19,8 +19,8 @@ namespace ParticipantManagement
             part.City = "Redmond";
             part.State = "WA";
             part.ZipCode = 98052;
-            part.LearnedToCode = "College";
-            part.HighestEducation = "Bachelors Degree";
+            part.LearnedToCode = CodeEducation.College;
+            part.HighestEducation = Education.Bachelors;
 
             Console.WriteLine($"UserID: {part.UserId}, CD: {part.DateCreated}, Name: { part.FirstName} {part.LastName}, Email: " +
                 $"{part.EmailAddress}, Address: {part.StreetAddress1}, {part.City}, {part.State}, {part.ZipCode}, Education: {part.HighestEducation}," +
@@ -36,11 +36,11 @@ namespace ParticipantManagement
             Console.WriteLine($"Workshop ID: {ws.WorkshopId}, Title: {ws.Title}, Desc: {ws.Description}, Length: {ws.Length}; Materials: {ws.MaterialsLink}");
 
             Location location = new Location();
-            location.addLocation("2003 6th Avenue", "Seattle", "WA", 98021);
+            location.addLocation("Industrious", "2003 6th Avenue", "Seattle", "WA", 98021);
 
-            Session session = new Session(1, "6/10/18", "6:00 pm", 1);
+            //Session session = new Session(1, "6/10/18", "6:00 pm", 1);
 
-            Console.WriteLine($"SessionID: {session.SessionId}, Date: {session.Date}, Time: {session.Time}, Location: {session.LocationId}");
+            //Console.WriteLine($"SessionID: {session.SessionId}, Date: {session.Date}, Time: {session.Time}");
             Console.Read();
         }
     }
